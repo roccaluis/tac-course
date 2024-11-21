@@ -11,6 +11,7 @@ terraform {
 
 provider "aws" {
   region = "us-east-2"
+  profile = "iamadmin-general"
 }
 
 resource "aws_instance" "lesson_03" {
