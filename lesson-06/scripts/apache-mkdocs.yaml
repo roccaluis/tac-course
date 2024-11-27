@@ -14,7 +14,7 @@ users:
     groups: users, admin
     lock_passwd: false
     ssh_authorized_keys:
-      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAAs4SEZCEAGNnwn2mAS9ByMdsyTclqDzSVSO0Ni9gbD shimbita@FBG-PF46HNAB
+      - ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAGuEXVp1oK5Lw1oNrOTcOH0r2VaOvDEehXUUbYkvlHg shimbita@FBG-PF46HNAB
 
 runcmd: # Linux commands
   - touch /home/spiderman/hello.txt
