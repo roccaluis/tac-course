@@ -56,7 +56,7 @@ resource "aws_vpc_security_group_ingress_rule" "sg_ssh" {
   }
 }
 
-resource "aws_vpc_security_group_egress_rule" "sg_ssh" {
+resource "aws_vpc_security_group_egress_rule" "sg_ssh_any_out" {
   security_group_id = aws_security_group.sg_ssh.id
   cidr_ipv4         = "0.0.0.0/0"
   ip_protocol       = "-1"
@@ -80,7 +80,7 @@ resource "aws_vpc_security_group_ingress_rule" "sg_https" {
   }
 }
 
-resource "aws_vpc_security_group_egress_rule" "sg_https" {
+resource "aws_vpc_security_group_egress_rule" "sg_https_any_out" {
   security_group_id = aws_security_group.sg_https.id
   cidr_ipv4         = "0.0.0.0/0"
   ip_protocol       = "-1"

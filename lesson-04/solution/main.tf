@@ -27,6 +27,9 @@ resource "aws_instance" "lesson_04" {
 }
 
 resource "aws_security_group" "sg_ssh" {
+
+  # vpc_id = "vpc-02538052356ca20ff"
+
   ingress {
     cidr_blocks = ["0.0.0.0/0"]
     protocol    = "tcp"
@@ -43,6 +46,9 @@ resource "aws_security_group" "sg_ssh" {
 }
 
 resource "aws_security_group" "sg_https" {
+
+  # vpc_id = "vpc-02538052356ca20ff"
+  
   ingress {
     cidr_blocks = ["192.168.0.0/16"]
     protocol    = "tcp"
